@@ -12,6 +12,9 @@ let package = Package(
         .library(
             name: "Sodium", targets: ["Sodium"]),
     ],
+    dependencies: [
+      .package(name: "Clibsodium", url: "https://github.com/yerlibilgin/libsodium-xcframework", .branch("master"))
+    ],
     targets: [
         .target(
             name: "Sodium",
