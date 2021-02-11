@@ -13,7 +13,7 @@ let package = Package(
             name: "Sodium", targets: ["Sodium"]),
     ],
     dependencies: [
-      .package(name: "Clibsodium", url: "https://github.com/yerlibilgin/libsodium-xcframework", .branch("master"))
+      .package(name: "Clibsodium", url: "https://github.com/yerlibilgin/libsodium-xcframework.git", .branch("master"))
     ],
     targets: [
         .target(
